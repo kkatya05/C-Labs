@@ -1,3 +1,5 @@
 build/
 *.obj
 *.exe
+*.txt
+*.png
