@@ -30,13 +30,7 @@ int main()
     std::cout << "Enter X and Y for each point: " << std::endl;
     for (int i = 0; i < n; i++)
     {
-        if (!(std::cin >> points[i].x >> points[i].y) ||
-            !std::isfinite(points[i].x) || !std::isfinite(points[i].y) ||
-            std::fabs(points[i].x) > 1000000 || std::fabs(points[i].y) > 1000000)
-        {
-            std::cout << "Invalid coordinates" << std::endl;
-            return 1;
-        }
+        std::cin >> points[i].x >> points[i].y;
     }
 
     if (n == 1)
